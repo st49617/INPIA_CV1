@@ -1,24 +1,26 @@
-body{
-     background-color: #007bff;
- }
+body {
+    background-color: #A4A4A4;
+    margin: 0px;
+}
 
 h1 {
     text-align: center;
 }
 
-p{
+p {
     font-family: Verdana;
     font-size: 20px;
 }
 
-header{
-    background-color: white;
-    /*padding: 5px;*/
+header {
+    background-color: #333;
+    display: flex;
     margin: 0px;
-    height: 50px;
+    /*height: 50px;*/
+    justify-content: center;
 }
 
-.logo{
+.logo {
     width: 40px;
     height: 40px;
     padding: 5px;
@@ -26,21 +28,63 @@ header{
     background-position: center;
     background-size: 40px;
     background-image: url("http://eduroam.upce.cz/favicon/ms-icon-310x310.png");
-    float: left;
+    /*float: left;*/
+    display: inline-block;
 }
 
-.logo a{
+.logo a {
     display: block;
     height: 40px;
 }
 
-nav.navbar{
-    height: 50px;
+nav.navbar {
+    /*height: 50px;*/
 }
 
-nav.navbar a{
-    display: inline-block;
-    height: 35px;
-    padding-top: 15px;
+/*nav.navbar a {*/
+    /*display: inline-block;*/
+    /*height: 35px;*/
+    /*padding: 5px;*/
+    /*padding-top: 15px;*/
+    /*padding-bottom: 0px;*/
+    /*text-decoration: none;*/
+    /*color: white;*/
+/*}*/
+
+/*nav.navbar a:hover {*/
+    /*color: #333;*/
+    /*background-color: white;*/
+    /*transition: 1s;*/
+/*}*/
+
+div.banner{
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://cdn.shopify.com/s/files/1/1381/1501/products/9334059_rfr_summer_banners_ci_grande.jpg?v=1468450863");
+    padding: 50px;
+}
+
+div.banner h1{
+    width: 100%;
+    font-size: 50px;
+    color: white;
+}
+
+div.banner a{
+    margin: 0px auto;
+    display: flex;
+    background-color: white;
+    color: deepskyblue;
+    justify-content: center;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+div.banner a:hover{
+    background-color: #EEEEEE;
 }
 
