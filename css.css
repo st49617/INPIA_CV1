@@ -1,0 +1,46 @@
+body{
+     background-color: #007bff;
+ }
+
+h1 {
+    text-align: center;
+}
+
+p{
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+header{
+    background-color: white;
+    /*padding: 5px;*/
+    margin: 0px;
+    height: 50px;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    background-image: url("http://eduroam.upce.cz/favicon/ms-icon-310x310.png");
+    float: left;
+}
+
+.logo a{
+    display: block;
+    height: 40px;
+}
+
+nav.navbar{
+    height: 50px;
+}
+
+nav.navbar a{
+    display: inline-block;
+    height: 35px;
+    padding-top: 15px;
+}
+
