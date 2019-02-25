@@ -13,6 +13,8 @@ public class Application {
     @Autowired
     List<MessageService> mailService;
 
+    MessageService sender;
+
     public Application() {
     }
 
@@ -23,9 +25,10 @@ public class Application {
     }
 
     public void proccessMesage(String message) {
-        for (MessageService emailService : mailService) {
-            emailService.sendMessage(message);
-        }
+//        for (MessageService emailService : mailService) {
+//            emailService.sendMessage(message);
+//        }
+        sender.sendMessage(message);
     }
 
     @PostConstruct

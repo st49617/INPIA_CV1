@@ -6,7 +6,10 @@ import org.springframework.stereotype.Component;
 public class EmailService implements MessageService{
 
     @Override
-    public void sendMessage(String message) {
+    public void sendMessage(String message) throws IllegalArgumentException {
+        if(message == null){
+            throw new IllegalArgumentException();
+        }
         System.out.println("Mail: " + message);
     }
 }
