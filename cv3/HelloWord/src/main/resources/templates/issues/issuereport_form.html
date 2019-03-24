@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Issue report form</title>
+</head>
+<body>
+<h1>Issue report form</h1>
+<form th:object="${issueReport}" th:action="@{/issuereport}" method="post">
+    <textarea name="description" th:field="*{description}"></textarea>
+    <input name="url" th:field="*{url}" type="text">
+    <input value="Submit" type="submit">
+</form>
+</body>
+</html>
