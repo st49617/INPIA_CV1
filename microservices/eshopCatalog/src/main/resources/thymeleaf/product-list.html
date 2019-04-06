@@ -1,0 +1,15 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+
+</head>
+<body>
+<h1>Výpis produktů</h1>
+<div class="content">
+    <div class="product-item" th:each="product: ${products}">
+        <h2 class="name" th:text="${product.name}"></h2>
+        <a th:href="@{'/cart/add/' + ${product.id}}">Do košíku</a>
+        <a th:href="@{'/detail/' + ${product.id}}">Zobrazit</a>
+    </div>
+</div>
+</body>
+</html>

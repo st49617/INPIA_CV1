@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="cv5.2-eshop_main" target="1.8" />
+      <module name="cv5.2-eshop_main~1" target="1.8" />
+      <module name="cv5.2-eshop_test" target="1.8" />
+      <module name="cv5.2-eshop_test~1" target="1.8" />
+      <module name="eshop_main" target="1.8" />
+      <module name="eshop_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

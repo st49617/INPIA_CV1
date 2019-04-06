@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Produkty</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    const Http = new XMLHttpRequest();
+    const url = 'http://localhost:8080/api/products/';
+    Http.open("GET", url);
+    Http.send();
+
+    Http.onreadystatechange = function (e) {
+        if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText);
+            var data = JSON.parse(this.responseText);
+            var $productList = $(".products-list");
+            console.log($productList);
+
+            data.forEach(function (e) {
+                $productList.append("<p>" + e.name + "</p>");
+            })
+        }
+
+    }
+</script>
+<body>
+<h1>Produkty</h1>
+<div class="products-list">
+
+</div>
+</body>
+</html>

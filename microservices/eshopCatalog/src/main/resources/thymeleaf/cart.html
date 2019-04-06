@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Košík</title>
+</head>
+<body>
+<table th:if="${!products.isEmpty()}">
+    <thead>
+    <th>Produkt</th>
+    <th>Počet kusů</th>
+    <th>Cena za kus</th>
+    <th></th>
+    </thead>
+    <tr class="cart-item" th:each="product : ${products.entrySet()}">
+        <td>[[${product.getKey().name}]]</td>
+        <td>[[${product.getValue()}]]</td>
+        <td>[[${product.getKey().price}]]</td>
+        <td><a th:href="@{'/cart/remove/' + ${product.getKey().id}}">Odebrat</a></td>
+    </tr>
+</table>
+<p th:if="${products.isEmpty()}">Nákupní košík je prázdný</p>
+<a th:href="@{'/'}">Zpět do obchodu</a>
+<a th:if="${!products.isEmpty()}" th:href="@{'/checkout'}">Dokončit objednávku</a>
+</div>
+</body>
+</html>

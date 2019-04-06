@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="eshop" external.linked.project.path="$MODULE_DIR$/../../eshopServer" external.root.project.path="$MODULE_DIR$/../../eshopServer" external.system.id="GRADLE" external.system.module.group="cz.upce.branda" external.system.module.version="0.0.1-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../eshopServer">
+      <excludeFolder url="file://$MODULE_DIR$/../../eshopServer/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../eshopServer/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../eshopServer/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
